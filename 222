@@ -363,22 +363,6 @@ function MakoLib:CreateWindow(data)
 			nwWindow.UI.Enabled = isVisible
 		end
 	end)
-	local isMinimized = false
-	nwWindow.UI.Frame.Topbar.MinimizeButton.MouseButton1Click:Connect(function()
-		if not isMinimized then
-			nwWindow.UI.Frame.CategoriesBG.Visible = false
-			nwWindow.UI.Frame.DropShadowHolder.Visible = false
-			nwWindow.UI.Frame.SectionsBG.Visible = false
-			nwWindow.UI.Frame.BackgroundTransparency = 1
-		else
-			nwWindow.UI.Frame.CategoriesBG.Visible = true
-			nwWindow.UI.Frame.DropShadowHolder.Visible = true
-			nwWindow.UI.Frame.SectionsBG.Visible = true
-			nwWindow.UI.Frame.BackgroundTransparency = 0
-		end
-		isMinimized = not isMinimized
-	end)
-	do
 		local gui = nwWindow.UI.Frame
 
 		local dragging
