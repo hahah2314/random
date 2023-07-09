@@ -5,7 +5,7 @@
 --]]
 
 local MakoLib = {}
-local Objects = (game:GetService("RunService"):IsStudio() and game.ReplicatedStorage.MakoUI) or game:GetObjects("rbxassetid://14003561277")[1]
+local Objects = (game:GetService("RunService"):IsStudio() and game.ReplicatedStorage.MakoUI) or game:GetObjects("rbxassetid://14003615334")[1]
 local MainColor = Color3.fromRGB(255, 255, 255)
 local Services = setmetatable({}, {
 	__index = function(self, key)
@@ -363,7 +363,6 @@ function MakoLib:CreateWindow(data)
 			nwWindow.UI.Enabled = isVisible
 		end
 	end)
-
 	local isMinimized = false
 	nwWindow.UI.Frame.Topbar.MinimizeButton.MouseButton1Click:Connect(function()
 		if not isMinimized then
