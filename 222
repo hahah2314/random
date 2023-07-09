@@ -363,6 +363,8 @@ function MakoLib:CreateWindow(data)
 			nwWindow.UI.Enabled = isVisible
 		end
 	end)
+
+do
 		local gui = nwWindow.UI.Frame
 
 		local dragging
